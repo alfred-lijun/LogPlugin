@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+40925a79d399bfe7f6b55e0cb9b4a6a2 CMakeFiles/LogPlugin_autogen

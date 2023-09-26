@@ -1,0 +1,68 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: D:/Qt/workplace/LogPlugin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):jom -f Makefile /nologo cmTC_74f60\fast && jom: parallel job execution disabled for Makefile
+	D:\Qt\qtcreator-7.0.2\bin\jom\jom.exe  -f CMakeFiles\cmTC_74f60.dir\build.make /nologo -L CMakeFiles\cmTC_74f60.dir\build
+Building C object CMakeFiles/cmTC_74f60.dir/src.c.obj
+	D:\Qt\Qt6.4.3\Tools\CMake_64\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_74f60.dir\src.c.obj.d --working-dir=D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp --filter-prefix="扅鶓??: ???畱??劘?  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1437~1.328\bin\HostX64\x64\cl.exe @C:\Users\NINGMEI\AppData\Local\Temp\src.c.obj.19464.0.jom
+src.c
+D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\src.c(1): fatal error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory
+jom: D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\CMakeFiles\cmTC_74f60.dir\build.make [CMakeFiles\cmTC_74f60.dir\src.c.obj] Error 2
+jom: D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\Makefile [cmTC_74f60\fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: D:/Qt/workplace/LogPlugin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):jom -f Makefile /nologo cmTC_c03c5\fast && jom: parallel job execution disabled for Makefile
+	D:\Qt\qtcreator-7.0.2\bin\jom\jom.exe  -f CMakeFiles\cmTC_c03c5.dir\build.make /nologo -L CMakeFiles\cmTC_c03c5.dir\build
+Building C object CMakeFiles/cmTC_c03c5.dir/CheckFunctionExists.c.obj
+	D:\Qt\Qt6.4.3\Tools\CMake_64\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_c03c5.dir\CheckFunctionExists.c.obj.d --working-dir=D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp --filter-prefix="扅鶓??: ???畱??劘?  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1437~1.328\bin\HostX64\x64\cl.exe @C:\Users\NINGMEI\AppData\Local\Temp\CheckFunctionExists.c.obj.18156.0.jom
+CheckFunctionExists.c
+Linking C executable cmTC_c03c5.exe
+	D:\Qt\Qt6.4.3\Tools\CMake_64\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_c03c5.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100203~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100203~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_c03c5.dir\objects1.rsp @C:\Users\NINGMEI\AppData\Local\Temp\cmTC_c03c5.exe.18156.63.jom
+LINK Pass 1: command "C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_c03c5.dir\objects1.rsp /out:cmTC_c03c5.exe /implib:cmTC_c03c5.lib /pdb:D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\cmTC_c03c5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_c03c5.dir/intermediate.manifest CMakeFiles\cmTC_c03c5.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
+jom: D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\CMakeFiles\cmTC_c03c5.dir\build.make [cmTC_c03c5.exe] Error 2
+jom: D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\Makefile [cmTC_c03c5\fast] Error 2
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: D:/Qt/workplace/LogPlugin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):jom -f Makefile /nologo cmTC_da1b8\fast && jom: parallel job execution disabled for Makefile
+	D:\Qt\qtcreator-7.0.2\bin\jom\jom.exe  -f CMakeFiles\cmTC_da1b8.dir\build.make /nologo -L CMakeFiles\cmTC_da1b8.dir\build
+Building C object CMakeFiles/cmTC_da1b8.dir/CheckFunctionExists.c.obj
+	D:\Qt\Qt6.4.3\Tools\CMake_64\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_da1b8.dir\CheckFunctionExists.c.obj.d --working-dir=D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp --filter-prefix="扅鶓??: ???畱??劘?  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1437~1.328\bin\HostX64\x64\cl.exe @C:\Users\NINGMEI\AppData\Local\Temp\CheckFunctionExists.c.obj.22804.0.jom
+CheckFunctionExists.c
+Linking C executable cmTC_da1b8.exe
+	D:\Qt\Qt6.4.3\Tools\CMake_64\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_da1b8.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100203~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100203~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_da1b8.dir\objects1.rsp @C:\Users\NINGMEI\AppData\Local\Temp\cmTC_da1b8.exe.22804.62.jom
+LINK Pass 1: command "C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1437~1.328\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_da1b8.dir\objects1.rsp /out:cmTC_da1b8.exe /implib:cmTC_da1b8.lib /pdb:D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\cmTC_da1b8.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_da1b8.dir/intermediate.manifest CMakeFiles\cmTC_da1b8.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
+jom: D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\CMakeFiles\cmTC_da1b8.dir\build.make [cmTC_da1b8.exe] Error 2
+jom: D:\Qt\workplace\LogPlugin\CMakeFiles\CMakeTmp\Makefile [cmTC_da1b8\fast] Error 2
+
+
+
