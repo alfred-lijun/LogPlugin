@@ -799,7 +799,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "D:/Qt/Qt6.4.3/6.2.3/msvc2019_64"
+			"value" : "D:/Qt/Qt6.4.3/6.4.3/msvc2019_64;D:/Qt/Qt6.4.3/6.2.3/msvc2019_64"
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",

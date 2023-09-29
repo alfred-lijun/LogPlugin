@@ -10,11 +10,11 @@ class LogCatWatcher : public QObject
     Q_OBJECT
 private:
     explicit LogCatWatcher(QObject *parent = nullptr);
-    int m_nTimerID;
-    int logCnt = -1;
+    int m_nTimerID;   
     virtual void timerEvent( QTimerEvent *event);
     static LogCatWatcher  * _pInstance ;
     void checkRollFile();
+    void checkDevice();
 public:
     static LogCatWatcher * getInstance();
     ~LogCatWatcher();
@@ -26,7 +26,10 @@ signals:
     void onDeviceRestart();
     void onPrint(QString log);
 
-public slots:
+private slots:
+    void slot_deviceOffline();
+    void slot_deviceOnline();
+    void slot_deviceRestart();
 };
 
 #endif // LOGCATWATCHER_H
