@@ -1,9 +1,11 @@
 D:/Qt/workplace/LogPlugin/LogPlugin_autogen/include/LogCatWatcher.moc: D:/Qt/workplace/LogPlugin/LogCatWatcher.cpp \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QDirIterator \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QEvent \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QFile \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QMutex \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QObject \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QProcess \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QTextStream \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QThread \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qalgorithms.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qanystringview.h \

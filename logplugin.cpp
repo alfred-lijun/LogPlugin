@@ -27,7 +27,6 @@ LogPluginPlugin::~LogPluginPlugin()
 {
     // Unregister objects from the plugin manager's object pool
     // Delete members
-
     LogCatClient::getInstance()->close();
     LogCatWatcher::getInstance()->close();
 }

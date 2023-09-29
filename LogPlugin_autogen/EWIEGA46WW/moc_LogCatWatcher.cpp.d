@@ -1,7 +1,9 @@
 D:/Qt/workplace/LogPlugin/LogPlugin_autogen/EWIEGA46WW/moc_LogCatWatcher.cpp: D:/Qt/workplace/LogPlugin/LogCatWatcher.h \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QFile \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QMutex \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QObject \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QProcess \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QTextStream \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qalgorithms.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qanystringview.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qarraydata.h \
@@ -22,6 +24,8 @@ D:/Qt/workplace/LogPlugin/LogPlugin_autogen/EWIEGA46WW/moc_LogCatWatcher.cpp: D:
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qcontainerinfo.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qcontainertools_impl.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qdatastream.h \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qfile.h \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qfiledevice.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qflags.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qglobal.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qglobalstatic.h \
@@ -52,6 +56,7 @@ D:/Qt/workplace/LogPlugin/LogPlugin_autogen/EWIEGA46WW/moc_LogCatWatcher.cpp: D:
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstring.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringalgorithms.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringbuilder.h \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringconverter.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringlist.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringliteral.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringmatcher.h \
@@ -61,6 +66,7 @@ D:/Qt/workplace/LogPlugin/LogPlugin_autogen/EWIEGA46WW/moc_LogCatWatcher.cpp: D:
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qsystemdetection.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtaggedpointer.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtcore-config.h \
+  D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtextstream.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtmetamacros.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtypeinfo.h \
   D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qutf8stringview.h \

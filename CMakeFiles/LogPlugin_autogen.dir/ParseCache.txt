@@ -72,9 +72,11 @@ D:/Qt/workplace/LogPlugin/LogPlugin.json.in
 D:/Qt/workplace/LogPlugin/LogCatWatcher.h
  mmc:Q_OBJECT
  mdp:D:/Qt/workplace/LogPlugin/LogCatWatcher.h
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QFile
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QMutex
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QObject
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QProcess
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QTextStream
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qalgorithms.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qanystringview.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qarraydata.h
@@ -95,6 +97,8 @@ D:/Qt/workplace/LogPlugin/LogCatWatcher.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qcontainerinfo.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qcontainertools_impl.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qdatastream.h
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qfile.h
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qfiledevice.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qflags.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qglobal.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qglobalstatic.h
@@ -125,6 +129,7 @@ D:/Qt/workplace/LogPlugin/LogCatWatcher.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstring.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringalgorithms.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringbuilder.h
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringconverter.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringlist.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringliteral.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qstringmatcher.h
@@ -134,6 +139,7 @@ D:/Qt/workplace/LogPlugin/LogCatWatcher.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qsystemdetection.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtaggedpointer.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtcore-config.h
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtextstream.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtmetamacros.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qtypeinfo.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qutf8stringview.h
@@ -226,9 +232,11 @@ D:/Qt/workplace/LogPlugin/LogCatWatcher.cpp
  mdp:D:/Qt/workplace/LogPlugin/LogCatWatcher.cpp
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QDirIterator
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QEvent
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QFile
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QMutex
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QObject
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QProcess
+ mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QTextStream
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/QThread
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qalgorithms.h
  mdp:D:/Qt/Qt6.4.3/6.2.3/msvc2019_64/include/QtCore/qanystringview.h
