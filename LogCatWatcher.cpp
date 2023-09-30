@@ -4,67 +4,7 @@
 #include <QThread>
 #define TIMER_TIMEOUT  (3*1000)
 
-class DeviceThread : public QThread{
-    Q_OBJECT
-public:
-    explicit DeviceThread(QObject *parent = 0): QThread(parent){}
-protected:
-    virtual void run() Q_DECL_OVERRIDE {
-        QProcess process(0);
-        process.start("cmd");
-        process.waitForStarted();
-        process.write("adb devices\n");
-        process.closeWriteChannel();
-        process.waitForFinished();
-        QString outStr = QString::fromStdString(process.readAllStandardOutput().constData());
-        outStr = outStr.replace("devices","");
-
-        if(outStr.contains("device")){
-            emit onDeviceOnline();
-        }else{
-            emit onDeviceOffline();
-        }
-    }
-signals:
-    void onDeviceOnline();
-    void onDeviceOffline();
-};
-
 int logCnt = -1;
-
-class RollFileThread : public QThread{
-    Q_OBJECT
-public:
-    explicit RollFileThread(QObject *parent = 0): QThread(parent){}
-protected:
-    virtual void run() Q_DECL_OVERRIDE {
-        QProcess process(0);
-        process.start("cmd");
-        process.waitForStarted();
-        process.write("adb shell \"cd /sdcard/cache/log && ls\"\n");
-        process.closeWriteChannel();
-        process.waitForFinished();
-        QString outStr = QString::fromStdString(process.readAllStandardOutput().constData());
-        outStr = outStr.replace("\r", "\t");
-        outStr = outStr.replace("\n", "\t");
-        int fileCnt = 0;
-        QStringList items = outStr.split("\t");
-        for(QString & item : items){
-            if(!item.isEmpty() && item.contains("roll_file")){
-                fileCnt++;
-            }
-        }
-
-        if(logCnt < 0){
-            logCnt = fileCnt;
-        }else if(logCnt != fileCnt){
-            logCnt = fileCnt;
-            emit onDeviceRestart();
-        }
-    }
-signals:
-    void onDeviceRestart();
-};
 
 LogCatWatcher* LogCatWatcher::_pInstance = nullptr;
 
@@ -133,4 +73,45 @@ void LogCatWatcher::timerEvent(QTimerEvent *event)  {
      }
 }
 
-#include "LogCatWatcher.moc"
+void DeviceThread::run() {
+    QProcess process(0);
+    process.start("cmd");
+    process.waitForStarted();
+    process.write("adb devices\n");
+    process.closeWriteChannel();
+    process.waitForFinished();
+    QString outStr = QString::fromStdString(process.readAllStandardOutput().constData());
+    outStr = outStr.replace("devices","");
+
+    if(outStr.contains("device")){
+        emit onDeviceOnline();
+    }else{
+        emit onDeviceOffline();
+    }
+}
+
+void RollFileThread::run() {
+    QProcess process(0);
+    process.start("cmd");
+    process.waitForStarted();
+    process.write("adb shell \"cd /sdcard/cache/log && ls\"\n");
+    process.closeWriteChannel();
+    process.waitForFinished();
+    QString outStr = QString::fromStdString(process.readAllStandardOutput().constData());
+    outStr = outStr.replace("\r", "\t");
+    outStr = outStr.replace("\n", "\t");
+    int fileCnt = 0;
+    QStringList items = outStr.split("\t");
+    for(QString & item : items){
+        if(!item.isEmpty() && item.contains("roll_file")){
+            fileCnt++;
+        }
+    }
+
+    if(logCnt < 0){
+        logCnt = fileCnt;
+    }else if(logCnt != fileCnt){
+        logCnt = fileCnt;
+        emit onDeviceRestart();
+    }
+}

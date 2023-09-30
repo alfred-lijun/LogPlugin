@@ -1,4 +1,4 @@
-# LogPlugin
+# LogPlugins
 
 ## How to Build
 

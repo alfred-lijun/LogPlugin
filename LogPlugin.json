@@ -2,12 +2,12 @@
     "Name" : "LogPlugin",
     "Version" : "0.0.1",
     "CompatVersion" : "0.0.1",
-    "Vendor" : "bbk",
-    "Copyright" : "(C) bbk",
-    "License" : "Put short license information here",
-    "Description" : "print roll file log",
-    "Url" : "https://www.bbk.com",
+    "Vendor" : "MyCompany",
+    "Copyright" : "(C) MyCompany",
+    "License" : "Put your license information here",
+    "Description" : "Put a short description of your plugin here",
+    "Url" : "http://www.mycompany.com",
     "Dependencies" : [
-        { "Name" : "Core", "Version" : "7.0.2" }
+        { "Name" : "Core", "Version" : "5.0.3" }
     ]
 }

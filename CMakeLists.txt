@@ -1,20 +1,20 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Remove when sharing with others.
-list(APPEND CMAKE_PREFIX_PATH "D:/Qt/qtcreator-7.0.2")
+list(APPEND CMAKE_PREFIX_PATH "/home/gec/qt-creator-opensource-src-6.0.1")
 
-project(LogPlugin)
+project(LogPlugins)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD 17)
 
-find_package(QtCreator REQUIRED COMPONENTS Core)
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+find_package(QtCreator COMPONENTS Core REQUIRED)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 set(QtX Qt${QT_VERSION_MAJOR})
 
-add_qtc_plugin(LogPlugin
+add_qtc_plugin(LogPlugins
   PLUGIN_DEPENDS
     QtCreator::Core
   DEPENDS
@@ -25,13 +25,8 @@ add_qtc_plugin(LogPlugin
     .github/workflows/build_cmake.yml
     .github/workflows/README.md
     README.md
-    logplugin.cpp
-    logplugin.h
-    logplugin_global.h
-    logpluginconstants.h
-)
-
-target_sources(LogPlugin
-  PRIVATE
-    LogCatClient.cpp LogCatClient.h LogCatWatcher.cpp LogCatWatcher.h
+    logplugins.cpp
+    logplugins.h
+    logplugins_global.h
+    logpluginsconstants.h
 )

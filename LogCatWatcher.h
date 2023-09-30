@@ -6,7 +6,28 @@
 #include <QObject>
 #include <QProcess>
 #include <QTextStream>
+#include <QThread>
 
+class DeviceThread : public QThread{
+    Q_OBJECT
+public:
+    explicit DeviceThread(QObject *parent = 0): QThread(parent){}
+protected:
+    virtual void run() override;
+signals:
+    void onDeviceOnline();
+    void onDeviceOffline();
+};
+
+class RollFileThread : public QThread{
+    Q_OBJECT
+public:
+    explicit RollFileThread(QObject *parent = 0): QThread(parent){}
+protected:
+    virtual void run() override;
+signals:
+    void onDeviceRestart();
+};
 
 class LogCatWatcher : public QObject
 {
